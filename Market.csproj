@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C6C65A1B-1B0A-462C-B744-CD2D38951E49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Market</RootNamespace>
+    <AssemblyName>Market</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rapor.Designer.cs">
+      <DependentUpon>rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satis.Designer.cs">
+      <DependentUpon>satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satisgecmis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisgecmis.Designer.cs">
+      <DependentUpon>satisgecmis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokbilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokbilgi.Designer.cs">
+      <DependentUpon>stokbilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokekle.Designer.cs">
+      <DependentUpon>stokekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunekle.Designer.cs">
+      <DependentUpon>urunekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunguncelle.Designer.cs">
+      <DependentUpon>urunguncelle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rapor.resx">
+      <DependentUpon>rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satis.resx">
+      <DependentUpon>satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisgecmis.resx">
+      <DependentUpon>satisgecmis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokbilgi.resx">
+      <DependentUpon>stokbilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokekle.resx">
+      <DependentUpon>stokekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunekle.resx">
+      <DependentUpon>urunekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunguncelle.resx">
+      <DependentUpon>urunguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
